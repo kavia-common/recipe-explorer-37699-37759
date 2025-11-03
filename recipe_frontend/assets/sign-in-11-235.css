@@ -1,0 +1,267 @@
+:root {
+  /* Colors from design system */
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-121212: #121212;
+  --color-d9d9d9: #d9d9d9;
+  --color-129575: #129575;
+  --color-ff9c00: #ff9c00;
+  --color-303030: #303030;
+
+  /* Typography (selected used references) */
+  --typo-60-family: 'Poppins', sans-serif;
+  --typo-60-size: 30px;
+  --typo-60-weight: 600;
+  --typo-60-line: 45px;
+  --typo-60-color: var(--color-000000);
+
+  --typo-61-family: 'Poppins', sans-serif;
+  --typo-61-size: 20px;
+  --typo-61-weight: 400;
+  --typo-61-line: 30px;
+  --typo-61-color: var(--color-121212);
+
+  --typo-62-family: 'Poppins', sans-serif;
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line: 16.5px;
+  --typo-62-color: var(--color-ff9c00);
+
+  --typo-63-family: 'Poppins', sans-serif;
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line: 16.5px;
+  --typo-63-color: var(--color-000000);
+
+  --typo-64-family: 'Poppins', sans-serif;
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line: 16.5px;
+  --typo-64-color: var(--color-d9d9d9);
+
+  --typo-65-family: 'Poppins', sans-serif;
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line: 16.5px;
+  --typo-65-color: var(--color-d9d9d9);
+
+  --typo-66-family: 'Poppins', sans-serif;
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line: 21px;
+  --typo-66-color: var(--color-121212);
+
+  --typo-58-family: 'Poppins', sans-serif;
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line: 24px;
+  --typo-58-color: var(--color-ffffff);
+
+  --typo-67-family: 'SF Pro Display', 'Poppins', sans-serif;
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line: 18px;
+  --typo-67-color: #303030;
+
+  /* Spacing utility */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Shadows mapped from design system styles used */
+  --shadow-style-126: 0 0 5px 3px #696969; /* shadow_0 */
+}
+
+.screen {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: var(--color-ffffff);
+}
+
+.root-frame {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: var(--color-ffffff);
+  border-radius: 30px; /* style_10 */
+  overflow: hidden;
+}
+
+/* Title texts */
+.text-hello {
+  margin: 0;
+  font-family: var(--typo-60-family);
+  font-size: var(--typo-60-size);
+  font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line);
+  color: var(--typo-60-color);
+}
+
+.text-welcome {
+  margin: 0;
+  font-family: var(--typo-61-family);
+  font-size: var(--typo-61-size);
+  font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line);
+  color: var(--typo-61-color);
+}
+
+/* Input components */
+.cmp-input .input-label {
+  margin: 0;
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line);
+  color: var(--typo-66-color);
+}
+
+.cmp-input .input-rect {
+  background: var(--color-ffffff);
+  border: 1.5px solid var(--color-d9d9d9);
+  border-radius: 10px; /* style_30 */
+}
+
+.cmp-input .input-placeholder {
+  margin: 0;
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line);
+  color: var(--typo-65-color);
+}
+
+/* Forgot Password text */
+.text-forgot {
+  margin: 0;
+  font-family: var(--typo-62-family);
+  font-size: var(--typo-62-size);
+  font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line);
+  color: var(--typo-62-color);
+}
+
+/* Divider lines + middle text */
+.group-line .line {
+  background-color: var(--color-d9d9d9);
+  height: 1px;
+}
+
+.group-line .text-or {
+  margin: 0;
+  font-family: var(--typo-64-family);
+  font-size: var(--typo-64-size);
+  font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line);
+  color: var(--typo-64-color);
+  text-align: center;
+}
+
+/* Social button */
+.btn-social {
+  position: absolute;
+}
+
+.btn-social .btn-bg {
+  position: absolute;
+  left: 0; top: 0;
+  width: 44px; height: 44px;
+  background: var(--color-ffffff);
+  border-radius: 10px; /* style_126 border_radius */
+  box-shadow: var(--shadow-style-126);
+}
+
+/* Ensure crisp icons */
+.icon {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Big CTA button */
+.big-button {
+  display: flex; /* layout: horizontal in YAML */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  width: 315px;
+  height: 60px;
+  border: none;
+  border-radius: 10px; /* style_11 */
+  background: var(--color-129575);
+  cursor: pointer;
+}
+
+.big-button .big-button-label {
+  font-family: var(--typo-58-family);
+  font-size: var(--typo-58-size);
+  font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line);
+  color: var(--typo-58-color);
+}
+
+/* Arrow icon representation (boolean_operation union) */
+.big-button .big-button-icon {
+  position: relative;
+  width: 20px; height: 20px;
+}
+.big-button .big-button-icon::before,
+.big-button .big-button-icon::after {
+  content: "";
+  position: absolute;
+  background: var(--color-ffffff);
+  border-radius: 1px;
+}
+.big-button .big-button-icon::before {
+  /* horizontal shaft: width ~13.33px height ~1.29px centered */
+  width: 13.33px; height: 1.3px; left: 3.33px; top: 9.35px;
+}
+.big-button .big-button-icon::after {
+  /* arrow triangle approximation using borders */
+  left: 9.9px; top: 4px;
+  width: 0; height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6.1px solid var(--color-ffffff);
+}
+
+/* Sign up prompt */
+.text-signup {
+  margin: 0;
+  font-family: var(--typo-63-family);
+  font-size: var(--typo-63-size);
+  font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line);
+  color: var(--typo-63-color);
+}
+
+/* Status bar */
+.status-bar {
+  position: absolute;
+  left: 0; top: 0;
+  width: 375px; height: 44px;
+}
+.status-time {
+  margin: 0;
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line);
+  color: var(--typo-67-color);
+}
+.battery-fill {
+  background: var(--color-303030);
+  border: 0.0 solid #4cd964; /* per style_34 border=0, color noted */
+  border-radius: 1.6px;
+}
+
+/* Home indicator */
+.home-indicator-line {
+  background: var(--color-121212);
+  border-radius: 100px;
+}

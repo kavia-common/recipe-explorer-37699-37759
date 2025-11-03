@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In - 11:235</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=SF+Pro+Display:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./sign-in-11-235.css">
+  <style>
+    /* Base reset for box-sizing */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #fff; }
+  </style>
+</head>
+<body>
+  <div id="screen-sign-in-11-235" class="screen">
+    <!-- Root container establishes 375x812 -->
+    <div class="root-frame">
+      <!-- Title Group (Titttle) -->
+      <div class="group-title" style="position: absolute; left: 30px; top: 94px; width: 155px; height: 75px;">
+        <p class="text-hello" style="position: absolute; left: 0px; top: 0px; width: 84px; height: 45px;">Hello,</p>
+        <p class="text-welcome" style="position: absolute; left: 0px; top: 45px; width: 155px; height: 30px;">Welcome Back!</p>
+      </div>
+
+      <!-- Input field (Email) component -->
+      <div class="cmp-input" style="position: absolute; left: 30px; top: 226px; width: 315px; height: 81px;">
+        <!-- Label -->
+        <p class="input-label" style="position: absolute; left: 0px; top: 0px; width: 38px; height: 21px;">Email</p>
+        <!-- Rectangle 6 field bg -->
+        <div class="input-rect" style="position: absolute; left: 0px; top: 26px; width: 315px; height: 55px;"></div>
+        <!-- Placeholder -->
+        <p class="input-placeholder" style="position: absolute; left: 20px; top: 45px; width: 61px; height: 17px;">Enter Email</p>
+      </div>
+
+      <!-- Input field (Password) component -->
+      <div class="cmp-input" style="position: absolute; left: 30px; top: 337px; width: 315px; height: 81px;">
+        <!-- Label (per YAML content) -->
+        <p class="input-label" style="position: absolute; left: 0px; top: 0px; width: 107px; height: 21px;">Enter Password</p>
+        <!-- Rectangle 6 field bg -->
+        <div class="input-rect" style="position: absolute; left: 0px; top: 26px; width: 315px; height: 55px;"></div>
+        <!-- Placeholder -->
+        <p class="input-placeholder" style="position: absolute; left: 20px; top: 45px; width: 84px; height: 17px;">Enter Password</p>
+      </div>
+
+      <!-- Forgot Password -->
+      <div class="group-forgot" style="position: absolute; left: 40px; top: 438px; width: 97px; height: 17px;">
+        <p class="text-forgot" style="position: absolute; left: 0px; top: 0px; width: 97px; height: 17px;">Forgot Password?</p>
+      </div>
+
+      <!-- Or Sign in With line group -->
+      <div class="group-line" style="position: absolute; left: 90px; top: 560px; width: 195px; height: 17px;">
+        <!-- Left line -->
+        <div class="line" style="position: absolute; left: 0px; top: 9px; width: 50px; height: 1px;"></div>
+        <!-- Text -->
+        <p class="text-or" style="position: absolute; left: 57px; top: 0px; width: 81px; height: 17px;">Or Sign in With</p>
+        <!-- Right line -->
+        <div class="line" style="position: absolute; left: 145px; top: 9px; width: 50px; height: 1px;"></div>
+      </div>
+
+      <!-- Social Buttons -->
+      <!-- Google Button group at left: position from parent root: (557-426)=131, top: (167-(-430))? Correct calc: child relative to root: 167 - (-430) = 597; but root frame origin at x:426,y:-430. So left=(557-426)=131, top=(167 - (-430))=597 -->
+      <div class="btn-social" style="position: absolute; left: 131px; top: 597px; width: 44px; height: 44px;">
+        <div class="btn-bg"></div>
+        <!-- Google icon as component area -->
+        <img alt="Google Vector" class="icon" src="figmaimages/figma_image_13_39.svg" style="position:absolute; left:12px; top:12px; width:20px; height:20px;">
+      </div>
+      <!-- Facebook Button group: left=(626-426)=200, top same 597 -->
+      <div class="btn-social" style="position: absolute; left: 200px; top: 597px; width: 44px; height: 44px;">
+        <div class="btn-bg"></div>
+        <!-- Using available asset mapped in YAML for the visible facebook glyph -->
+        <img alt="Facebook Vector" class="icon" src="figmaimages/figma_image_13_58.svg" style="position:absolute; left:10px; top:10px; width:24px; height:24px;">
+      </div>
+
+      <!-- CTA Big Button -->
+      <button class="big-button" style="position: absolute; left: 30px; top: 480px; width: 315px; height: 60px;">
+        <span class="big-button-label">Sign In</span>
+        <!-- Arrow Right icon: representing the boolean operation union -->
+        <span class="big-button-icon" aria-hidden="true"></span>
+      </button>
+
+      <!-- "Don’t have an account? Sign up" -->
+      <!-- left=(525-426)=99, top=(266-(-430))=696 -->
+      <p class="text-signup" style="position: absolute; left: 99px; top: 696px; width: 177px; height: 17px;">Don’t have an account? Sign up</p>
+
+      <!-- Status Bar -->
+      <div class="status-bar" style="position: absolute; left: 0px; top: 0px; width: 375px; height: 44px;">
+        <!-- Time -->
+        <p class="status-time" style="position: absolute; left: 29.5px; top: 12px; width: 37px; height: 18px;">19:27</p>
+        <!-- Battery inner fill rectangle -->
+        <div class="battery-fill" style="position: absolute; left: 338px; top: 19px; width: 18px; height: 7.6667px;"></div>
+      </div>
+
+      <!-- Home Indicator -->
+      <div class="home-indicator" style="position: absolute; left: 0px; top: 778px; width: 375px; height: 34px;">
+        <div class="home-indicator-line" style="position: absolute; left: 120px; top: 21px; width: 135px; height: 5px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./sign-in-11-235.js"></script>
+</body>
+</html>
